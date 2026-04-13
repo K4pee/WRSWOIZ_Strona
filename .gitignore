@@ -49,3 +49,11 @@ Thumbs.db
 
 
 docker-compose.override.yml
+
+# Unused partner-logo formats (Trusted section loads JPG/JPEG only)
+public/images/Logotypy/*.png
+public/images/Logotypy/*.svg
+public/images/Logotypy/*.pdf
+
+# Temporary local folder
+public/images/Nowy folder/
