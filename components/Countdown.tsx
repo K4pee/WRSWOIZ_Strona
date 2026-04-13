@@ -3,31 +3,24 @@
 import { useState, useEffect } from 'react';
 
 export default function Countdown() {
-  const [times, setTimes] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [now, setNow] = useState<number | null>(null);
 
   useEffect(() => {
-    const updateCountdown = () => {
-      const targetDate = new Date('2026-05-13T09:00:00').getTime();
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      if (distance < 0) {
-        setTimes({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        return;
-      }
-
-      setTimes({
-        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000),
-      });
-    };
-
-    updateCountdown();
-    const interval = setInterval(updateCountdown, 1000);
+    setNow(Date.now());
+    const interval = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(interval);
   }, []);
+
+  const targetDate = new Date('2026-05-13T09:00:00+02:00').getTime();
+  const rawDistance = now === null ? 0 : targetDate - now;
+  const distance = Number.isFinite(rawDistance) && rawDistance > 0 ? rawDistance : 0;
+
+  const times = {
+    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+    seconds: Math.floor((distance % (1000 * 60)) / 1000),
+  };
 
   const pad = (n: number) => String(n).padStart(2, '0');
 
@@ -56,7 +49,7 @@ export default function Countdown() {
               <span className="countdown-label">Sekund</span>
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginTop: 24 }}>
+          <div className="countdown-actions">
             <a href="https://forms.office.com/e/VRGzkGcnEL" className="countdown-register-btn" aria-label="Link do zapisów na Dzień Wydziału 2026">
               <i className="fas fa-ticket-alt"></i> Zapisy na Dzień Wydziału 2026
             </a>

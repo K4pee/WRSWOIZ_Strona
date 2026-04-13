@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+﻿import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { getEditionImages } from '@/lib/site-content-server';
@@ -11,22 +11,22 @@ export default function DW2025() {
     <>
       <Navbar />
       <header className="page-header">
-        <h1>Dzień Wydziału 2025</h1>
+        <h1>DzieĹ„ WydziaĹ‚u 2025</h1>
       </header>
       <main className="page-content">
         <div className="container">
-          <p>Galeria z Dnia Wydziału 2025.</p>
+          <p>Galeria z Dnia WydziaĹ‚u 2025.</p>
 
           <section>
             <h2>Galeria</h2>
-            <div style={{ marginTop: 8 }}>
+            <div className="gallery-top">
               
               <Gallery images={images} altPrefix="DW 2025" shuffle={true} />
             </div>
           </section>
 
-          <p style={{ marginTop: '1rem' }}>
-            <Link href="/dw">← Powrót do strony Dzień Wydziału</Link>
+          <p className="back-link-wrap">
+            <Link href="/dw">â† PowrĂłt do strony DzieĹ„ WydziaĹ‚u</Link>
           </p>
         </div>
       </main>
@@ -34,4 +34,5 @@ export default function DW2025() {
     </>
   );
 }
+
 

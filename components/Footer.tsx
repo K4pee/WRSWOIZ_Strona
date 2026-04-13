@@ -50,7 +50,6 @@ export default function Footer() {
               <li><a href="/szpilka">Szpilka</a></li>
               <li><a href="/sniadanie-na-wydziale">Śniadanie na Wydziale</a></li>
               <li><a href="/kapuczino-z-alpaczino">Kapuczino z Alpaczino</a></li>
-              <li><a href="/zaufali-nam">Zaufali nam</a></li>
             </ul>
           </div>
 

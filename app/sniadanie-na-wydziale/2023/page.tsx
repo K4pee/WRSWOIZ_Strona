@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+﻿import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { getEditionImages } from '@/lib/site-content-server';
@@ -11,22 +11,22 @@ export default function Sniadanie2023() {
     <>
       <Navbar />
       <header className="page-header">
-        <h1>Śniadanie na Wydziale 2023</h1>
+        <h1>Ĺšniadanie na Wydziale 2023</h1>
       </header>
       <main className="page-content">
         <div className="container">
-          <p>Galeria ze Śniadania na Wydziale 2023.</p>
+          <p>Galeria ze Ĺšniadania na Wydziale 2023.</p>
 
           <section>
             <h2>Galeria</h2>
-            <div style={{ marginTop: 8 }}>
+            <div className="gallery-top">
               
-              <Gallery images={images} altPrefix="Śniadanie 2023" shuffle={true} />
+              <Gallery images={images} altPrefix="Ĺšniadanie 2023" shuffle={true} />
             </div>
           </section>
 
-          <p style={{ marginTop: '1rem' }}>
-            <Link href="/sniadanie-na-wydziale">← Powrót do strony Śniadanie na Wydziale</Link>
+          <p className="back-link-wrap">
+            <Link href="/sniadanie-na-wydziale">â† PowrĂłt do strony Ĺšniadanie na Wydziale</Link>
           </p>
         </div>
       </main>
@@ -34,3 +34,4 @@ export default function Sniadanie2023() {
     </>
   );
 }
+

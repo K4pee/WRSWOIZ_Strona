@@ -17,7 +17,7 @@ export default function Szpilka2025() {
           <p>Galeria z Szpilki 2025.</p>
           <section>
             <h2>Galeria</h2>
-            <div style={{ marginTop: 8 }}>
+            <div className="gallery-top">
               
               <Gallery images={images} altPrefix="Szpilka 2025" shuffle={true} />
             </div>
@@ -28,4 +28,5 @@ export default function Szpilka2025() {
     </>
   );
 }
+
 

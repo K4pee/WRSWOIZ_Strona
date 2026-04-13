@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+﻿import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { getEditionImages } from '@/lib/site-content-server';
@@ -24,14 +24,14 @@ export default function Kapuczino2024() {
 
           <section>
             <h2>Galeria</h2>
-            <div style={{ marginTop: 8 }}>
+            <div className="gallery-top">
               
               <Gallery images={images} altPrefix="Kapuczino 2024" shuffle={true} />
             </div>
           </section>
 
-          <p style={{ marginTop: '1rem' }}>
-            <Link href="/kapuczino-z-alpaczino">← Powrót do strony Kapuczino z Alpaczino</Link>
+          <p className="back-link-wrap">
+            <Link href="/kapuczino-z-alpaczino">â† PowrĂłt do strony Kapuczino z Alpaczino</Link>
           </p>
         </div>
       </main>
@@ -39,4 +39,5 @@ export default function Kapuczino2024() {
     </>
   );
 }
+
 

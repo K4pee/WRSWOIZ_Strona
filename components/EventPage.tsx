@@ -27,7 +27,7 @@ export default function EventPage({ slug }: Props) {
                 <p key={paragraph}>{paragraph}</p>
               ))}
               {section.bullets?.length ? (
-                <ul style={{ listStyle: 'disc', marginLeft: '30px', marginBottom: '20px' }}>
+                <ul>
                   {section.bullets.map((bullet) => (
                     <li key={bullet}>{bullet}</li>
                   ))}
@@ -35,9 +35,9 @@ export default function EventPage({ slug }: Props) {
               ) : null}
 
               {section.previousEditions?.length ? (
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+                <div className="editions-grid">
                       {section.previousEditions.map((ed, i) => (
-                        <Link key={ed.year} href={ed.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <Link key={ed.year} href={ed.link} className="unstyled-link">
                           <article
                             className="edition-tile"
                             style={{ animationDelay: `${i * 80}ms` }}

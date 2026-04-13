@@ -109,8 +109,9 @@ button {
 }
 
 .logo-img {
+    width: 50px;
     height: 50px;
-    width: auto;
+    object-fit: contain;
 }
 
 .logo-text {
@@ -547,6 +548,34 @@ button {
 .countdown-register-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-top {
+    margin-top: 8px;
+}
+
+.back-link-wrap {
+    margin-top: 1rem;
+}
+
+.editions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.unstyled-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.countdown-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
 }
 
 
@@ -1244,6 +1273,9 @@ button {
 
     .page-content h2 {
         font-size: 1.8rem;
+        max-width: 70ch;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .page-content h3 {
@@ -1266,7 +1298,10 @@ button {
         flex-direction: column;
         align-items: center;
         padding-top: 40px;
+        padding-bottom: 32px;
         gap: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         transition: left 0.3s ease;
     }
 
@@ -1348,8 +1383,8 @@ button {
     }
 
     .news-arrow {
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
     }
     
     .stat-number {
@@ -1449,13 +1484,26 @@ button {
         gap: 12px;
     }
 
+    .countdown-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .countdown-register-btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+        padding: 14px 16px;
+    }
+
     .news-card {
         flex-basis: 100%;
     }
 
     .news-arrow {
-        width: 36px;
-        height: 36px;
+        width: 44px;
+        height: 44px;
     }
 
     
