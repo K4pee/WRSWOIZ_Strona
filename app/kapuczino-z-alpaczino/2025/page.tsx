@@ -26,7 +26,7 @@ export default function Kapuczino2025() {
           </section>
 
           <p className="back-link-wrap">
-            <Link href="/kapuczino-z-alpaczino">â† PowrĂłt do strony Kapuczino z Alpaczino</Link>
+            <Link href="/kapuczino-z-alpaczino">← Powrót do strony Kapuczino z Alpaczino</Link>
           </p>
         </div>
       </main>

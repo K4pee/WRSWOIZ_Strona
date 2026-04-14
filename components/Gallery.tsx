@@ -9,7 +9,7 @@ type Props = {
   shuffle?: boolean;
 };
 
-export default function Gallery({ images = [], altPrefix = "Zdjęcie", minTile = 180, shuffle = false }: Props) {
+export default function Gallery({ images = [], altPrefix = "Zdjęcie", minTile = 280, shuffle = false }: Props) {
   const [list, setList] = useState<string[]>(images || []);
   const [errorMap, setErrorMap] = useState<Record<number, boolean>>({});
   const [openIndex, setOpenIndex] = useState<number | null>(null);

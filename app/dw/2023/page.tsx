@@ -11,11 +11,11 @@ export default function DW2023() {
     <>
       <Navbar />
       <header className="page-header">
-        <h1>DzieĹ„ WydziaĹ‚u 2023</h1>
+        <h1>Dzień Wydziału 2023</h1>
       </header>
       <main className="page-content">
         <div className="container">
-          <p>Trzecia edycja peĹ‚na energii, konkursĂłw i wspĂłlnej zabawy.</p>
+          <p>Trzecia edycja pełna energii, konkursów i wspólnej zabawy.</p>
 
           <section>
             <h2>Galeria</h2>
@@ -27,7 +27,7 @@ export default function DW2023() {
           </section>
 
           <p className="back-link-wrap">
-            <Link href="/dw">â† PowrĂłt do strony DzieĹ„ WydziaĹ‚u</Link>
+            <Link href="/dw">← Powrót do strony Dzień Wydziału</Link>
           </p>
         </div>
       </main>

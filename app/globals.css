@@ -5,8 +5,29 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-family: 'Times New Roman', Times, Georgia, serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
@@ -34,6 +55,14 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.container,
+.nav-container,
+.countdown-card,
+.stat-item,
+.event-fancy-card {
+    min-width: 0;
 }
 
 
@@ -1284,6 +1313,27 @@ button {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0 14px;
+    }
+
+    .logo {
+        padding: 6px 10px;
+        gap: 8px;
+        font-size: 1.05rem;
+        max-width: calc(100vw - 90px);
+    }
+
+    .logo::before,
+    .logo::after {
+        display: none;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
     .nav-toggle {
         display: block;
     }
@@ -1366,12 +1416,31 @@ button {
     }
     
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .stat-item--wide {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .stat-item--wide .stat-number {
+        font-size: 2rem;
     }
 
     .countdown-grid {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .countdown-card {
+        padding: 28px 16px;
+    }
+
+    .countdown-item {
+        padding: 16px 8px;
     }
 
     .news-card {
@@ -1461,6 +1530,16 @@ button {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+    }
+
+    .logo {
+        max-width: calc(100vw - 82px);
+        padding: 6px 8px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+        line-height: 1;
     }
     
     .stat-item {

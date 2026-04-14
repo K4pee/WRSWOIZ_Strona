@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getEventPageContent, type EventPageContent } from '@/lib/site-content';
+import { getEditionImages } from '@/lib/site-content-server';
 import Link from 'next/link';
 
 type Props = {
@@ -9,6 +10,22 @@ type Props = {
 
 export default function EventPage({ slug }: Props) {
   const content = getEventPageContent(slug);
+  const sections = content.sections.map((section) => {
+    if (!section.previousEditions?.length) return section;
+
+    const previousEditions = section.previousEditions.map((ed) => {
+      const fromFolder = getEditionImages(slug, ed.year);
+      return {
+        ...ed,
+        images: fromFolder.length > 0 ? fromFolder : (ed.images ?? []),
+      };
+    });
+
+    return {
+      ...section,
+      previousEditions,
+    };
+  });
 
   return (
     <>
@@ -20,7 +37,7 @@ export default function EventPage({ slug }: Props) {
         <div className="container">
           <p>{content.intro}</p>
 
-          {content.sections.map((section) => (
+          {sections.map((section) => (
             <section key={section.heading}>
               <h2>{section.heading}</h2>
               {section.paragraphs?.map((paragraph) => (
@@ -49,6 +66,7 @@ export default function EventPage({ slug }: Props) {
                             <div className="edition-content">
                               <h3>{ed.title ?? `Edycja ${ed.year}`}</h3>
                               {ed.excerpt ? <p className="muted">{ed.excerpt}</p> : null}
+                              {ed.images?.length ? <p className="muted">Zdjęć: {ed.images.length}</p> : null}
                               <p className="cta">Zobacz galerię →</p>
                             </div>
                           </article>

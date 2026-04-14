@@ -1,11 +1,5 @@
 import type { Metadata } from 'next';
-import { Noto_Sans } from 'next/font/google';
 import './globals.css';
-
-const notoSans = Noto_Sans({
-  subsets: ['latin', 'latin-ext'],
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Dzień Wydziału OIZ - 13.05.2026 - WRS WOIZ',
@@ -30,7 +24,7 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
       </head>
-      <body className={notoSans.className}>
+      <body>
         {children}
       </body>
     </html>

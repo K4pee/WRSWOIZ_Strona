@@ -27,7 +27,7 @@ export default function Footer() {
               <a href="https://www.tiktok.com/@oiz.pl" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-tiktok"></i>
               </a>
-              <a href="https://www.linkedin.com/showcase/wrs-wydziału-organizacji-i-zarządzania-pł/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/showcase/wrs-wydzia%C5%82u-organizacji-i-zarz%C4%85dzania-p%C5%82/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>

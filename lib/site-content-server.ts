@@ -5,7 +5,7 @@ const aliasMap: Record<string, string> = {
   'sniadanie-na-wydziale': 'snw',
   'kapuczino-z-alpaczino': 'kza',
   dw: 'dw',
-  szpilka: 'szpilka',
+  szpilka: 'Szpilka',
 };
 
 const exts = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif', '.JPG', '.JPEG']);

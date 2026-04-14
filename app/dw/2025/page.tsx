@@ -11,11 +11,11 @@ export default function DW2025() {
     <>
       <Navbar />
       <header className="page-header">
-        <h1>DzieĹ„ WydziaĹ‚u 2025</h1>
+        <h1>Dzień Wydziału 2025</h1>
       </header>
       <main className="page-content">
         <div className="container">
-          <p>Galeria z Dnia WydziaĹ‚u 2025.</p>
+          <p>Galeria z Dnia Wydziału 2025.</p>
 
           <section>
             <h2>Galeria</h2>
@@ -26,7 +26,7 @@ export default function DW2025() {
           </section>
 
           <p className="back-link-wrap">
-            <Link href="/dw">â† PowrĂłt do strony DzieĹ„ WydziaĹ‚u</Link>
+            <Link href="/dw">← Powrót do strony Dzień Wydziału</Link>
           </p>
         </div>
       </main>

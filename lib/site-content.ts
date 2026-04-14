@@ -58,7 +58,7 @@ export const newsEntries: NewsEntry[] = [
   {
     date: 'Wydarzenie chillout',
     title: 'Kapuczino z Alpaczino',
-    content: 'Luźna atmosfera, rozmowy i kawa - odpoczynek między zajęciami z ekipą WRS.',
+    content: 'Luźna atmosfera, rozmowy i kawa - odpoczynek między zajęciami ze studentami.',
     link: '/kapuczino-z-alpaczino',
     cta: 'Poznaj wydarzenie',
   },
@@ -187,9 +187,9 @@ export const eventPages: EventPageContent[] = [
             excerpt: 'Najlepsze momenty z Szpilki 2025.',
             link: '/szpilka/2025',
             images: [
-              '/images/szpilka/IMG_7999.JPG',
-              '/images/szpilka/IMG_8054.JPG',
-              '/images/szpilka/IMG_8142.JPG',
+              '/images/Szpilka/IMG_7999.JPG',
+              '/images/Szpilka/IMG_8054.JPG',
+              '/images/Szpilka/IMG_8142.JPG',
             ],
           },
         ],
