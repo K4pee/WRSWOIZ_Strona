@@ -112,6 +112,13 @@ export const eventPages: EventPageContent[] = [
       },
 
       {
+        heading: 'Spartakiada',
+        paragraphs: ['Spartakiada to sportowo-integracyjne wydarzenie, podczas którego kilkuosobowe drużyny rywalizują w różnych konkurencjach i wyzwaniach. Łączy elementy zabawy, współpracy i zdrowej rywalizacji.Uczestnicy zdobywają punkty za wykonane zadania, a najlepsze zespoły są nagradzane. Głównym celem Spartakiady jest integracja, aktywność fizyczna oraz wspólne spędzenie czasu w luźnej, przyjaznej atmosferze.'],
+
+
+      },
+
+      {
         heading: 'Poprzednie edycje',
         paragraphs: ['Poniżej znajdziesz wybrane zdjęcia z poprzednich edycji.'],
         previousEditions: [
@@ -179,7 +186,7 @@ export const eventPages: EventPageContent[] = [
       },
       {
         heading: 'Galeria',
-        paragraphs: ['Zdjęcia z poprzednich edycji - do uzupełnienia.'],
+        paragraphs: [],
         previousEditions: [
           {
             year: '2025',

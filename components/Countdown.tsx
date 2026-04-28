@@ -53,10 +53,6 @@ export default function Countdown() {
             <a href="https://forms.office.com/e/VRGzkGcnEL" className="countdown-register-btn" aria-label="Link do zapisów na Dzień Wydziału 2026">
               <i className="fas fa-ticket-alt"></i> Zapisy na Dzień Wydziału 2026
             </a>
-
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe97gjKYlsfMMN1yGvMUXcKA9AHMLQxmMSV77t-pvauUA5C-A/viewform" className="countdown-register-btn" aria-label="Link do zapisów na Spartakiadę">
-              <i className="fas fa-running"></i> Zapisy na Spartakiadę
-            </a>
           </div>
         </div>
       </div>
