@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Dzień Wydziału OIZ - 13.05.2026 - WRS WOIZ',
-  description: 'Dzień Wydziału OIZ - Największe wydarzenie naszego roku organizowane przez WRS WOIZ. 13 maja 2026, Łódź. Harmonogram, prelegenci, partnerzy, FAQ.',
+  title: 'WRS WOIZ',
+  description: 'WRS WOIZ - Wydziałowa Rada Samorządu Wydziału Organizacji i Zarządzania',
   icons: {
     icon: '/logo-wrs.png',
   },
