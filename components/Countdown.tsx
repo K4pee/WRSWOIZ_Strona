@@ -11,7 +11,7 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
-  const targetDate = new Date('2026-05-13T09:00:00+02:00').getTime();
+  const targetDate = new Date('2026-10-08T08:00:00+02:00').getTime();
   const rawDistance = now === null ? 0 : targetDate - now;
   const distance = Number.isFinite(rawDistance) && rawDistance > 0 ? rawDistance : 0;
 
@@ -28,10 +28,10 @@ export default function Countdown() {
     <section className="countdown-section" id="odliczanie-dw">
       <div className="container">
         <div className="countdown-card">
-          <span className="section-badge">Dzień Wydziału 2026</span>
+          <span className="section-badge">Szpilka 2026</span>
           <h2>Odliczamy do startu</h2>
-          <p className="countdown-subtitle">Widzimy się 13 maja 2026</p>
-          <div className="countdown-grid" aria-label="Odliczanie do Dnia Wydziału 2026">
+          <p className="countdown-subtitle">Widzimy się 8 października 2026</p>
+          <div className="countdown-grid" aria-label="Odliczanie do Szpilki 2026">
             <div className="countdown-item">
               <span className="countdown-value" id="countdown-days">{pad(times.days)}</span>
               <span className="countdown-label">Dni</span>
@@ -49,11 +49,11 @@ export default function Countdown() {
               <span className="countdown-label">Sekund</span>
             </div>
           </div>
-          <div className="countdown-actions">
-            <a href="https://forms.office.com/e/VRGzkGcnEL" className="countdown-register-btn" aria-label="Link do zapisów na Dzień Wydziału 2026">
-              <i className="fas fa-ticket-alt"></i> Zapisy na Dzień Wydziału 2026
+          {/*<div className="countdown-actions">
+            <a href="#" className="countdown-register-btn" aria-label="Link do zapisów na Szpilkę 2026">
+              <i className="fas fa-ticket-alt"></i> Zapisy na Szpilkę 2026
             </a>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
