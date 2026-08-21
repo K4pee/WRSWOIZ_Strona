@@ -25,7 +25,7 @@ export default function Partners() {
               <div className="event-content">
                 <h3>{event.title}</h3>
                 <p>{event.description}</p>
-                <a href={latest} className="event-link">
+                <a href={slug} className="event-link">
                   {event.cta} <i className="fas fa-arrow-right"></i>
                 </a>
               </div>
