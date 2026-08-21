@@ -33,14 +33,23 @@ export default function EventPage({ slug }: Props) {
         <header
             className="page-header"
             style={content.backgroundImage ? {
-                backgroundImage: `url('${content.backgroundImage}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                minHeight: '1200px'
+                padding: 0,
+                background: 'none'
             } : {}}
         >
-            {!content.backgroundImage && <h1>{content.pageTitle}</h1>}
+            {content.backgroundImage ? (
+                <img
+                    src={content.backgroundImage}
+                    alt={content.pageTitle}
+                    style={{
+                        width: '100%',
+                        height: 'auto',
+                        display: 'block',
+                    }}
+                />
+            ) : (
+                <h1>{content.pageTitle}</h1>
+            )}
         </header>
       <main className="page-content">
         <div className="container">
