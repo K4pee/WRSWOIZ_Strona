@@ -80,10 +80,10 @@ export default function EventPage({slug}: Props) {
                                             src={imgUrl}
                                             alt=""
                                             style={{
-                                                width: '100%',
+                                                width: 'auto',
                                                 maxWidth: '600px',
-                                                height: '450px',
-                                                objectFit: 'cover',
+                                                height: 'auto',
+                                                maxHeight: '450px',
                                                 borderRadius: '8px'
                                             }}
                                         />
