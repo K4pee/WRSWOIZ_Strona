@@ -19,6 +19,7 @@ export type EventEntry = {
 export type EventPageContent = {
   slug: 'dw' | 'szpilka' | 'sniadanie-na-wydziale' | 'kapuczino-z-alpaczino';
   pageTitle: string;
+  backgroundImage?: string;
   intro: string;
   sections: Array<{
     heading: string;
@@ -174,6 +175,7 @@ export const eventPages: EventPageContent[] = [
   {
     slug: 'szpilka',
     pageTitle: 'Szpilka',
+    backgroundImage: '/images/Szpilka/szpilka_background.jpg',
     intro: 'Szpilka to jedyne takie wydarzenie integracyjne na naszym wydziale, które łączy w sobie dobrą zabawę, konkursy i szkolenia. To świetna okazja, aby poznać nowych ludzi, zdobyć ciekawe nagrody i spędzić czas w wyjątkowej atmosferze.',
     sections: [
       {
