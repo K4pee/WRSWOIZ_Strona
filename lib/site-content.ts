@@ -177,14 +177,25 @@ export const eventPages: EventPageContent[] = [
     slug: 'szpilka',
     pageTitle: 'Szpilka',
     backgroundImage: '/images/Szpilka/szpilka_background.jpg',
-    intro: 'Szpilka to jedyne takie wydarzenie integracyjne na naszym wydziale, które łączy w sobie dobrą zabawę, konkursy i szkolenia. To świetna okazja, aby poznać nowych ludzi, zdobyć ciekawe nagrody i spędzić czas w wyjątkowej atmosferze.',
+    intro: '',
     sections: [
       {
-        heading: 'O wydarzeniu',
+        heading: 'Co to szpilka?',
         paragraphs: [
-          'Szpilka to wyjazd integracyjny idealny dla studentów pierwszego roku - okazja, by poznać osoby, z którymi będziesz studiować, złapać klimat życia studenckiego i dobrze się bawić.',
-          'Podczas wyjazdu czekają na uczestników: mnóstwo nowych znajomości, luźna atmosfera bez stresu, praktyczne wskazówki ułatwiające start w pierwszym semestrze oraz szkolenia przydatne w życiu uczelnianym. Najważniejsze jest dobre towarzystwo i dużo wspólnej zabawy.',
-          'Dodatkowo przygotowaliśmy atrakcje w formie drużynowych wyzwań - elementy detektywistycznej rozgrywki oraz przygodę w klimacie Forest Escape, które integrują zespoły i dostarczają emocji. Wieczorami odbywają się gry i spotkania, które zbliżają uczestników i tworzą niezapomniane wspomnienia.',
+          'Szpilka to wyjazd szkoleniowo-integracyjny przeznaczony dla pierwszorocznych studentów i nie tylko. ;) Dzięki niemu poznasz nowych kompanów podróży zwanej studiami, złapiesz klimat życia studenckiego i zresetujesz głowę przed semestrem nauki w otoczeniu mazurskich jezior i lasów.',
+          'Przygotowaliśmy praktyczne szkolenia, które pomogą rozwinąć umiejętności przydatne na studiach, oraz obowiązkowe szkolenie z PIOS, które będziesz miał/a z głowy wcześniej niż reszta roku. Oprócz tego zadbaliśmy o integrację, spodziewaj się gry terenowej czy zmagań drużyn, a to wszystko w tematyce pirackiej!',
+        ],
+        sectionImages: ['https://cdn.7tv.app/emote/01FM4ZMZGR000D6HG894PC56A3/3x.avif']
+      },
+      {
+        heading: 'Gdzie cumujemy?',
+        paragraphs: [
+            'Już drugi rok z rzędu będziemy w Ośrodku Wczasowym Ostrów Pieckowski na Mazurach. Ośrodek znajduje się na malowniczym półwyspie, otoczony dwoma jeziorami. Domki są 6-osobowe, ogrzewane z lodówką i czajnikiem.'
+        ],
+        sectionImages: [
+            'https://epiecki.pl/wp-content/smush-webp/2025/02/IMG_5575-scaled.jpeg.webp',
+            'https://epiecki.pl/wp-content/smush-webp/2025/02/IMG_5534-scaled.jpeg.webp',
+            'https://epiecki.pl/wp-content/smush-webp/2025/02/359048622_765584118902302_1167268839561507217_n.jpg.webp',
         ],
       },
       {
