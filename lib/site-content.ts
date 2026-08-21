@@ -25,6 +25,7 @@ export type EventPageContent = {
     heading: string;
     paragraphs?: string[];
     bullets?: string[];
+    sectionImages?: string[];
     previousEditions?: Array<{
       year: string;
       title?: string;

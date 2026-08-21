@@ -61,6 +61,23 @@ export default function EventPage({ slug }: Props) {
               {section.paragraphs?.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
+
+                {section.sectionImages?.length ? (
+                    <div
+                        className="section-images"
+                        style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '20px', margin: '20px 0' }}
+                    >
+                        {section.sectionImages.map((imgUrl, index) => (
+                            <img
+                                key={index}
+                                src={imgUrl}
+                                alt=""
+                                style={{ width: '100%', maxWidth: '600px', height: '450px', objectFit: 'cover', borderRadius: '8px' }}
+                            />
+                        ))}
+                    </div>
+                ) : null}
+
               {section.bullets?.length ? (
                 <ul>
                   {section.bullets.map((bullet) => (
