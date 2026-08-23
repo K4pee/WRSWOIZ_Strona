@@ -1,32 +1,30 @@
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Dzień Wydziału OIZ - 13.05.2026 - WRS WOIZ',
-  description: 'Dzień Wydziału OIZ - Największe wydarzenie naszego roku organizowane przez WRS WOIZ. 13 maja 2026, Łódź. Harmonogram, prelegenci, partnerzy, FAQ.',
-  icons: {
-    icon: '/logo-wrs.png',
-  },
+    title: 'WRS WOIZ',
+    description: 'WRS WOIZ - Wydziałowa Rada Samorządu Wydziału Organizacji i Zarządzania',
+    icons: {
+        icon: '/logo-wrs.png',
+    },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
+export default function RootLayout({children}: {
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="pl">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-      </head>
-      <body>
+    return (
+        <html lang="pl">
+        <head>
+            <meta charSet="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            />
+        </head>
+        <body>
         {children}
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
