@@ -178,6 +178,7 @@ export const eventPages: EventPageContent[] = [
         slug: 'szpilka',
         pageTitle: 'Szpilka',
         backgroundImage: '/images/Szpilka/szpilka_background.jpg',
+        hasCountdown: true,
         intro: '',
         sections: [
             {
