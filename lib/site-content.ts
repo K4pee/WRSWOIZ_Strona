@@ -20,6 +20,7 @@ export type EventPageContent = {
     slug: 'dw' | 'szpilka' | 'sniadanie-na-wydziale' | 'kapuczino-z-alpaczino';
     pageTitle: string;
     backgroundImage?: string;
+    hasCountdown?: boolean;
     intro: string;
     sections: Array<{
         heading: string;
