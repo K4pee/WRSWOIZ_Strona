@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Countdown from '@/components/Countdown';
 import {getEventPageContent, type EventPageContent} from '@/lib/site-content';
 import {getEditionImages} from '@/lib/site-content-server';
 import Link from 'next/link';
@@ -51,6 +52,9 @@ export default function EventPage({slug}: Props) {
                     <h1>{content.pageTitle}</h1>
                 )}
             </header>
+
+            {content.hasCountdown && <Countdown/>}
+
             <main className="page-content">
                 <div className="container">
                     <p>{content.intro}</p>

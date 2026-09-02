@@ -20,6 +20,7 @@ export type EventPageContent = {
     slug: 'dw' | 'szpilka' | 'sniadanie-na-wydziale' | 'kapuczino-z-alpaczino';
     pageTitle: string;
     backgroundImage?: string;
+    hasCountdown?: boolean;
     intro: string;
     sections: Array<{
         heading: string;
@@ -177,6 +178,7 @@ export const eventPages: EventPageContent[] = [
         slug: 'szpilka',
         pageTitle: 'Szpilka',
         backgroundImage: '/images/Szpilka/szpilka_background.jpg',
+        hasCountdown: true,
         intro: '',
         sections: [
             {
