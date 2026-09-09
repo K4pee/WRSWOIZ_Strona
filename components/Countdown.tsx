@@ -49,11 +49,11 @@ export default function Countdown() {
                             <span className="countdown-label">Sekund</span>
                         </div>
                     </div>
-                    {/*<div className="countdown-actions">
-            <a href="#" className="countdown-register-btn" aria-label="Link do zapisów na Szpilkę 2026">
+                    <div className="countdown-actions">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLQqxcL6gaQ1WnyCaA5WOJrQ6dM8qgiRve63GoSmcmPEDLew/viewform?usp=header&usp=embed_facebook" className="countdown-register-btn" aria-label="Link do zapisów na Szpilkę 2026">
               <i className="fas fa-ticket-alt"></i> Zapisy na Szpilkę 2026
             </a>
-          </div>*/}
+          </div>
                 </div>
             </div>
         </section>
